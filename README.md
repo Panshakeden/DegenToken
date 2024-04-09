@@ -28,7 +28,7 @@ git clone https://github.com/Panshakeden/DegenToken
 npm install
 
 Contract Address
-0x410BDa5ae4B0863cde9C2A3B025d7A675335fA39
+0x215CA892E2B349d5e239BabACEbDb6Bc21a2974f
 
 Authors
 panshak samson email: panshakeden@gmail.com

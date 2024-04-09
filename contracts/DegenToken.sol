@@ -63,10 +63,6 @@ contract DegenToken is ERC20 {
 
             require(this.balanceOf(msg.sender)>= 10,"No enought funds to buy");
             
-            approve(msg.sender, 10);
-            
-            transferFrom(msg.sender, owner, 10);
-            
             DegenKnives[msg.sender] = true;
             
             return true;
@@ -77,10 +73,6 @@ contract DegenToken is ERC20 {
 
             require(this.balanceOf(msg.sender)>=20,"No enough balance");
             
-            approve(msg.sender, 20);
-            
-            transferFrom(msg.sender, owner, 20);
-            
             getDegenGun[msg.sender] = true;
             
             return true;
@@ -89,10 +81,6 @@ contract DegenToken is ERC20 {
 
             require(!getDegenGun[msg.sender],"You must buy gun first"); 
             require(this.balanceOf(msg.sender) >= 30,"No enough balance");
-            
-            approve(msg.sender, 30);
-            
-            transferFrom(msg.sender, owner, 30);
             
             gameDegenMap[msg.sender] = true;
 
@@ -103,10 +91,6 @@ contract DegenToken is ERC20 {
         }else if (_itemToBuy == 4) {
 
             require(this.balanceOf(msg.sender) > 30,"No enough balance");
-            
-            approve(msg.sender, 40);
-            
-            transferFrom(msg.sender, owner, 40);
             
             extraBlood[msg.sender] = true;
 
